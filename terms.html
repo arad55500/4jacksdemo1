@@ -105,13 +105,31 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand"><img src="assets/logo.svg" alt="4Jacks" class="footer-logo"><p>Delicious Draft Nitro Cold Brew For Your Restaurant, Cafe, or Business.</p><p class="footer-tag">#BoldColdSmooth</p></div>
+                <div class="footer-brand"><img src="assets/logo.svg" alt="4Jacks" class="footer-logo"><p>Delicious Draft Nitro Cold Brew For Your Restaurant, Cafe, or Business.</p><p class="footer-tag">#BoldColdSmooth</p><div class="footer-social"><a href="https://instagram.com/4jacksnitro" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a><a href="https://facebook.com/4jacksnitro" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg></a><a href="https://linkedin.com/company/4jacksnitro" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2V9zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a><a href="https://tiktok.com/@4jacksnitro" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 0010.85-4.43v-7a8.16 8.16 0 004.73 1.52v-3.4a4.85 4.85 0 01-.86-.08l-.28-5.22z"/></svg></a></div></div>
                 <div class="footer-col"><h4>explore</h4><a href="about.html">about us</a><a href="drinks.html">drink inspirations</a><a href="find-us.html">find us</a><a href="faq.html">faq</a><a href="contact.html">contact</a></div>
                 <div class="footer-col"><h4>distributed by</h4><span>Sysco</span><span>PFG</span><span>Driscoll Foods</span><span>US Foods</span></div>
             </div>
         </div>
         <div class="footer-bottom"><p>&copy; 2025 4Jacks Nitro Cold Brew. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p></div>
     </footer>
+    <!-- CHATBOT -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Chat with us">
+        <svg viewBox="0 0 24 24" fill="none" id="chatbotIconChat"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" id="chatbotIconClose" style="display:none;"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="chatbot-badge">1</span>
+    </button>
+    <div class="chatbot-panel" id="chatbotPanel">
+        <div class="chatbot-header">
+            <div class="chatbot-header-avatar"><img src="assets/download-300x270.png" alt="4Jacks"></div>
+            <div class="chatbot-header-info"><h4>4Jacks Nitro</h4><p>Ask us anything about cold brew</p></div>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages"></div>
+        <div class="chatbot-quick-actions" id="chatbotQuickActions"></div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Type a question..." autocomplete="off">
+            <button id="chatbotSend" aria-label="Send"><svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polygon points="22,2 15,22 11,13 2,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
