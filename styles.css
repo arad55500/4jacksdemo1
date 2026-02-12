@@ -1199,57 +1199,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .page-hero-tall { min-height: 65vh; }
 
 /* ============================================================
-   MOBILE DRINK STRIP (hidden on desktop, shown on mobile)
-   ============================================================ */
-.hero-mobile-drinks {
-    display: none;
-}
-.hero-mobile-drinks-track {
-    display: flex;
-    gap: 12px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    padding: 4px 0 8px;
-    scrollbar-width: none;
-}
-.hero-mobile-drinks-track::-webkit-scrollbar { display: none; }
-.hero-mobile-drink {
-    flex: 0 0 120px;
-    height: 170px;
-    border-radius: var(--radius-md);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 8px;
-    gap: 8px;
-    color: var(--cream);
-    scroll-snap-align: start;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
-.hero-mobile-drink img {
-    max-height: 100px;
-    width: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2));
-}
-.hero-mobile-drink span {
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: 0.6rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    opacity: 0.9;
-}
-
-/* ============================================================
    RESPONSIVE
    ============================================================ */
-
-/* ---- TABLET (1024px) ---- */
 @media (max-width: 1024px) {
+    /* Hero tiles scale down */
     .hero-v2-tile { display: none; }
     .hero-tile-1, .hero-tile-2, .hero-tile-3, .hero-tile-4 { display: flex; }
     .hero-tile-1 { width: 140px; height: 180px; top: 10%; left: 2%; }
@@ -1264,162 +1217,30 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
-/* ---- MOBILE (768px) ---- */
 @media (max-width: 768px) {
-    /* Navigation */
     .nav { display: none; }
     .mobile-toggle { display: flex; }
-    .header-inner { height: 64px; }
-    .logo-img { height: 40px; }
-
-    /* Hero — show mobile drink strip instead of floating tiles */
-    .hero-v2 { min-height: auto; padding: 100px 20px 40px; }
-    .hero-v2-tile { display: none !important; }
-    .hero-v2-badge { margin-bottom: 20px; }
-    .hero-v2-badge img { width: 70px; }
-    .hero-v2-sub { margin-bottom: 28px; }
-    .hero-mobile-drinks {
-        display: block;
-        width: calc(100% + 40px);
-        margin: 32px -20px 0;
-        padding: 0 20px;
-    }
-
-    /* Section spacing tighter on mobile */
-    .section-full { padding: clamp(56px,8vw,100px) 0; }
-
-    /* Bento grid */
-    .bento-3col { grid-template-columns: 1fr; grid-auto-rows: minmax(240px, auto); }
+    .bento-3col { grid-template-columns: 1fr; }
     .bento-2col { grid-template-columns: 1fr; }
-    .bento-span-row { grid-row: span 1; }
-    .bento-span-2 { grid-column: span 1; }
-    .bento-tile-color .drink-photo { max-height: 180px; }
-    /* Fix the inline row direction "boost your menu" tile */
-    .bento-tile.bento-span-2[style*="flex-direction:row"] {
-        flex-direction: column !important;
-        gap: 24px !important;
-        text-align: center !important;
-        padding: 32px 24px !important;
-    }
-    .bento-tile.bento-span-2[style*="flex-direction:row"] div {
-        text-align: center !important;
-    }
-    .bento-tile.bento-span-2[style*="flex-direction:row"] .drink-photo {
-        max-height: 160px !important;
-    }
-
-    /* Steps grid */
-    .steps-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .step-block { padding: 24px 16px; }
-    .step-num { font-size: clamp(2.2rem, 6vw, 3rem); margin-bottom: 10px; }
-    .step-block h3 { font-size: 1rem; margin-bottom: 8px; }
-    .step-block p { font-size: 0.82rem; }
-
-    /* Stats bar — 2x2 grid on mobile */
-    .stats-bar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        padding: clamp(32px,5vw,56px) 0;
-    }
-    .stat-num { font-size: clamp(2rem, 7vw, 2.8rem); }
-    .stat-label { font-size: 0.78rem; }
-
-    /* Dispensers */
-    .dispenser-grid { grid-template-columns: 1fr; max-width: 100%; }
-    .dispenser-card-visual { height: 200px; }
-    .dispenser-card-body { padding: 24px 20px; }
-    .dispenser-card-body h3 { font-size: 1.2rem; }
-    .dispenser-spec { font-size: 0.72rem; padding: 5px 10px; }
-
-    /* Video grid */
-    .video-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    .video-card { aspect-ratio: 9 / 13; }
-    .video-card-play { width: 52px; height: 52px; }
-    .video-card-play svg { width: 20px; height: 20px; }
-    .video-card-title { font-size: 0.78rem; }
-    .video-card-sub { font-size: 0.68rem; }
-
-    /* Social grid */
-    .social-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-
-    /* Feature accordion */
-    .feature-row-icon { width: 38px; height: 38px; }
-    .feature-row-icon svg { width: 16px; height: 16px; }
-
-    /* Footer */
-    .footer { padding-top: 48px; }
-    .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 32px; }
-    .footer-brand p { max-width: 100%; }
-    .footer-logo { margin: 0 auto 16px; }
-    .footer-social { justify-content: center; }
-
-    /* Forms */
+    .steps-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
+    .biz-grid { grid-template-columns: 1fr 1fr; }
+    .stats-bar { gap: 24px; }
+    .stat-num { font-size: clamp(2rem, 8vw, 3rem); }
+    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+    .footer-brand p { max-width: 100%; }
     .contact-bar { flex-direction: column; align-items: center; }
-
-    /* Business grid */
-    .biz-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .biz-card { padding: 24px 16px; }
-
-    /* Buttons tighter on mobile */
-    .btn-lg { padding: 15px 32px; font-size: 0.95rem; }
-    .btn-xl { padding: 18px 40px; font-size: 1.05rem; }
-    .cta-banner { padding: clamp(60px,10vw,120px) clamp(16px,4vw,32px); }
-
-    /* Map */
-    .map-embed-container { min-height: 380px; }
-    .map-embed-container iframe { height: 380px; }
-    .map-overlay-bar { flex-direction: column; align-items: flex-start; padding: 30px 20px 20px; }
-
-    /* Chatbot */
-    .chatbot-panel { right: 8px; left: 8px; width: auto; bottom: 82px; max-height: calc(100vh - 100px); max-height: calc(100dvh - 100px); }
-    .chatbot-toggle { bottom: 16px; right: 16px; width: 52px; height: 52px; }
-    .chatbot-toggle svg { width: 22px; height: 22px; }
+    /* Hero: hide all floating tiles on mobile, full text focus */
+    .hero-v2-tile { display: none !important; }
+    .hero-v2 { min-height: 85vh; padding-top: 120px; }
+    .hero-v2-badge img { width: 80px; }
 }
 
-/* ---- SMALL MOBILE (480px) ---- */
 @media (max-width: 480px) {
-    .hero-v2 { padding: 90px 16px 32px; }
-    .hero-v2-badge img { width: 60px; }
     .hero-v2-ctas { flex-direction: column; width: 100%; }
     .hero-v2-ctas .btn { width: 100%; }
-    .hero-mobile-drinks { margin: 28px -16px 0; padding: 0 16px; }
-    .hero-mobile-drink { flex: 0 0 105px; height: 150px; }
-    .hero-mobile-drink img { max-height: 85px; }
-
-    /* Steps go to 1 column on very small */
-    .steps-grid { grid-template-columns: 1fr; gap: 12px; }
-
-    /* Biz grid stays 2 columns */
     .biz-grid { grid-template-columns: 1fr 1fr; }
-
-    /* Drinks page */
     .drink-grid { grid-template-columns: 1fr; }
-
-    /* Video stays 3 columns but shrinks */
-    .video-grid { gap: 8px; }
-    .video-card-bg { padding: 16px 12px; gap: 10px; }
-    .video-card-play { width: 44px; height: 44px; }
-    .video-card-play svg { width: 16px; height: 16px; }
-    .video-card-title { font-size: 0.68rem; }
-    .video-card-sub { font-size: 0.6rem; }
-
-    /* Social stays 2 columns */
-    .social-grid { gap: 8px; }
-    .social-card-icon { width: 28px; height: 28px; }
-    .social-card-text { font-size: 0.72rem; }
-    .social-card-handle { font-size: 0.62rem; }
-
-    /* Dispenser specs wrap better */
-    .dispenser-specs { gap: 6px; }
-    .dispenser-spec { font-size: 0.68rem; padding: 4px 8px; }
-
-    /* Value prop image */
-    .section-full img[alt="The 4Jacks Value Proposition"] { border-radius: var(--radius-lg); }
-
-    /* Tighter container padding */
-    .container { padding: 0 16px; }
 }
 
 /* ============================================================
@@ -1937,7 +1758,30 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     height: 18px;
 }
 
-/* (Responsive additions for new sections are consolidated into the main responsive blocks above) */
+/* ============================================================
+   RESPONSIVE ADDITIONS
+   ============================================================ */
+@media (max-width: 1024px) {
+    .dispenser-grid { grid-template-columns: 1fr 1fr; }
+    .video-grid { grid-template-columns: repeat(3, 1fr); }
+    .social-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .dispenser-grid { grid-template-columns: 1fr; max-width: 480px; }
+    .video-grid { grid-template-columns: 1fr 1fr; }
+    .social-grid { grid-template-columns: 1fr 1fr; }
+    .chatbot-panel { right: 8px; left: 8px; width: auto; bottom: 88px; max-height: calc(100vh - 100px); max-height: calc(100dvh - 100px); }
+    .chatbot-toggle { bottom: 16px; right: 16px; width: 52px; height: 52px; }
+    .chatbot-toggle svg { width: 24px; height: 24px; }
+    .footer-social { justify-content: center; }
+    .map-embed-container { min-height: 400px; }
+    .map-embed-container iframe { height: 400px; }
+    .map-overlay-bar { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+    .video-grid { grid-template-columns: 1fr; max-width: 320px; margin: 0 auto; }
+    .social-grid { grid-template-columns: 1fr; max-width: 300px; margin: 0 auto; }
+}
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
