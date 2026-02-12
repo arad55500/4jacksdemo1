@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | 4Jacks Nitro Cold Brew</title>
+    <meta name="description" content="Contact 4Jacks Nitro Cold Brew — schedule a free tasting, become a partner, or learn how to serve our premium nitro cold brew at your business.">
+    <link rel="icon" type="image/png" href="assets/download-300x270.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header at-top" id="header">
+        <div class="header-bg"></div>
+        <div class="header-inner">
+            <a href="index.html" class="logo-link"><img src="assets/logo.svg" alt="4Jacks" class="logo-img"></a>
+            <nav class="nav">
+                <a href="about.html" class="nav-link">about us</a>
+                <a href="drinks.html" class="nav-link">drink inspirations</a>
+                <a href="find-us.html" class="nav-link">find us</a>
+                <a href="faq.html" class="nav-link">faq</a>
+                <a href="contact.html" class="nav-link nav-link-cta active">contact us</a>
+            </nav>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="about.html">about us</a><a href="drinks.html">drink inspirations</a><a href="find-us.html">find us</a><a href="faq.html">faq</a><a href="contact.html">contact us</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="page-hero bg-espresso" style="min-height:45vh;">
+        <p class="label text-red reveal" style="margin-bottom:20px;">let's connect</p>
+        <h1 class="display-huge text-cream reveal" style="--d:0.1s;max-width:900px;">let's pour<br><span class="text-red">something great.</span></h1>
+        <p class="body-lg reveal" style="--d:0.2s;color:var(--tan);max-width:560px;margin-top:24px;">We'd love to hear from you! Whether you want a free 15-minute demo or want to start serving 4Jacks — reach out anytime.</p>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee marquee-red">
+        <div class="marquee-track">
+            <span class="marquee-text"><span class="dot"></span> free demo <span class="dot"></span> no commitment <span class="dot"></span> 15 minutes <span class="dot"></span> we come to you <span class="dot"></span> talk@4jacksnitro.com <span class="dot"></span> (914) 588-0737 <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> free demo <span class="dot"></span> no commitment <span class="dot"></span> 15 minutes <span class="dot"></span> we come to you <span class="dot"></span> talk@4jacksnitro.com <span class="dot"></span> (914) 588-0737 <span class="dot"></span></span>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <section class="section-full bg-cream">
+        <div class="container">
+            <div class="contact-form bg-white reveal" style="box-shadow:0 12px 48px rgba(0,0,0,0.08);border:1px solid rgba(60,36,21,0.05);">
+                <div class="text-center" style="margin-bottom:36px;">
+                    <h2 class="display-sm">send us a message</h2>
+                    <p class="body-md" style="color:var(--gray-600);margin-top:8px;">We'll get back to you as soon as possible.</p>
+                </div>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name" style="background:var(--cream-light);">
+                        </div>
+                        <div class="form-group">
+                            <label for="business">business name *</label>
+                            <input type="text" id="business" name="business" required placeholder="Your business" style="background:var(--cream-light);">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">email *</label>
+                            <input type="email" id="email" name="email" required placeholder="you@business.com" style="background:var(--cream-light);">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" style="background:var(--cream-light);">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-full">
+                            <label for="businessType">business type</label>
+                            <select id="businessType" name="businessType" style="background:var(--cream-light);color:var(--espresso);">
+                                <option value="" disabled selected>Select your business type</option>
+                                <option value="restaurant">Restaurant</option>
+                                <option value="cafe">Coffee Shop / Café</option>
+                                <option value="bar">Bar / Lounge</option>
+                                <option value="office">Office</option>
+                                <option value="hotel">Hotel / Hospitality</option>
+                                <option value="event">Event Space</option>
+                                <option value="stadium">Stadium / Arena</option>
+                                <option value="campus">College Campus</option>
+                                <option value="distributor">Distributor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-full">
+                            <label for="message">message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your business and how we can help..." style="background:var(--cream-light);"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-red btn-xl submit-btn">let's pour.</button>
+                </form>
+            </div>
+
+            <div class="contact-bar reveal" style="margin-top:48px;">
+                <div class="contact-bar-item">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="2"/><rect x="3" y="6" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+                    <a href="mailto:talk@4jacksnitro.com">talk@4jacksnitro.com</a>
+                </div>
+                <div class="contact-bar-item">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2"/></svg>
+                    <a href="tel:+19145880737">(914) 588-0737</a>
+                </div>
+            </div>
+
+            <div class="text-center reveal" style="margin-top:48px;">
+                <p class="body-md" style="color:var(--gray-600);">4Jacks Cold Brew is proudly distributed by major broadliners across America,<br>making it easy to bring our premium nitro cold brew to your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="wave-divider" style="background:var(--cream);margin-top:-1px;">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" fill="var(--espresso)"><path d="M0,50 C360,100 1080,0 1440,70 L1440,100 L0,100 Z"/></svg>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><img src="assets/logo.svg" alt="4Jacks" class="footer-logo"><p>Delicious Draft Nitro Cold Brew For Your Restaurant, Cafe, or Business.</p><p class="footer-tag">#BoldColdSmooth</p></div>
+                <div class="footer-col"><h4>explore</h4><a href="about.html">about us</a><a href="drinks.html">drink inspirations</a><a href="find-us.html">find us</a><a href="faq.html">faq</a><a href="contact.html">contact</a></div>
+                <div class="footer-col"><h4>distributed by</h4><span>Sysco</span><span>PFG</span><span>Driscoll Foods</span><span>US Foods</span></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 4Jacks Nitro Cold Brew. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
