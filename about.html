@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | 4Jacks Nitro Cold Brew</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Our Story | 4Jacks Nitro Cold Brew</title>
     <meta name="description" content="Learn about 4Jacks Nitro Cold Brew — the fastest-growing draft cold brew brand in the U.S. Premium Arabica blend, patented dispensers, no tanks required.">
     <link rel="icon" type="image/png" href="./assets/download-300x270.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,88 +34,285 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="page-hero page-hero-tall bg-espresso">
-        <p class="label text-red reveal" style="margin-bottom:20px;">about 4jacks</p>
-        <h1 class="display-huge text-cream reveal" style="--d:0.1s;max-width:900px;">the bold, cold,<br><span class="text-red">smooth</span> cold brew.</h1>
-        <p class="body-lg text-cream reveal" style="--d:0.2s;max-width:600px;margin-top:24px;opacity:0.7;">We're more than a cold brew company — we're the fastest-growing draft cold brew brand in the U.S.</p>
-    </section>
+    <!-- ======= HERO BENTO ======= -->
+    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:72px 12px 0;">
+
+        <!-- Hero text — full width -->
+        <div class="hb-tile hb-hero-text hb-span-3c" style="grid-column:1/-1;background:var(--espresso);color:var(--cream);padding-top:clamp(48px,6vw,80px);padding-bottom:clamp(40px,5vw,60px);min-height:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <img src="./assets/download-300x270.png" alt="4Jacks" class="hb-badge">
+            <h1 class="display-huge" style="color:var(--cream);text-align:center;">the bold, cold,<br><span class="highlight">smooth</span> cold brew.</h1>
+            <p class="body-lg" style="color:var(--tan);max-width:560px;text-align:center;">We're more than a cold brew company — we're the fastest-growing draft cold brew brand in the U.S.</p>
+        </div>
+
+        <!-- Dispenser photo — big -->
+        <div class="hb-tile hb-span-2r" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/2473D9B9-23D9-460D-977F-9D036FEB94E1.jpeg" alt="4Jacks Nitro Cold Brew dispenser pour" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+
+        <!-- Brand poster -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/Red Gatorboard_2025.jpg" alt="4Jacks Brand — Locally Brewed, Power Your Life" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+
+        <!-- VIDEO — nitro pour -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;position:relative;">
+            <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+                <source src="./assets/vid-1.mp4" type="video/mp4">
+            </video>
+            <div style="position:absolute;bottom:16px;left:16px;z-index:2;">
+                <span class="hb-label" style="color:var(--white);background:rgba(0,0,0,0.4);padding:4px 10px;border-radius:6px;">the pour</span>
+            </div>
+        </div>
+    </div>
 
     <!-- MARQUEE -->
     <div class="marquee marquee-red">
         <div class="marquee-track">
-            <span class="marquee-text"><span class="dot"></span> stay feisty <span class="dot"></span> #boldcoldsmooth <span class="dot"></span> premium arabica blend <span class="dot"></span> locally brewed <span class="dot"></span> patented dispensers <span class="dot"></span> no gas tanks <span class="dot"></span></span>
-            <span class="marquee-text"><span class="dot"></span> stay feisty <span class="dot"></span> #boldcoldsmooth <span class="dot"></span> premium arabica blend <span class="dot"></span> locally brewed <span class="dot"></span> patented dispensers <span class="dot"></span> no gas tanks <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> stay feisty <span class="dot"></span> #boldcoldsmooth <span class="dot"></span> premium arabica blend <span class="dot"></span> locally brewed <span class="dot"></span> patented dispensers <span class="dot"></span> no gas tanks <span class="dot"></span> power your life <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> stay feisty <span class="dot"></span> #boldcoldsmooth <span class="dot"></span> premium arabica blend <span class="dot"></span> locally brewed <span class="dot"></span> patented dispensers <span class="dot"></span> no gas tanks <span class="dot"></span> power your life <span class="dot"></span></span>
         </div>
     </div>
 
-    <!-- ABOUT CONTENT -->
-    <section class="section-full bg-cream">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text reveal-left">
-                    <p class="label text-red" style="margin-bottom:20px;">our story</p>
-                    <h2 class="display-md" style="margin-bottom:24px;">we believe cold brew should be fast, easy, and delicious.</h2>
-                    <p>At 4Jacks Nitro, our customers refer to us as the #BoldColdSmooth Cold Brew. That's why we spent years perfecting a premium blend of Arabica roasts — crafted for smoothness, bold flavor, and versatility.</p>
-                    <p>But we didn't stop at great Cold Brew. We also engineered patented dispenser technology that delivers a perfect pour — anytime, anywhere — with no gas tanks, no water lines, and no hassle.</p>
-                    <p>Whether you're pouring from the BIB (bag-in-box) or a compact dispenser, 4Jacks Nitro Cold Brew is precision-crafted for convenience, quality, and consistency.</p>
-                </div>
-                <div class="about-img reveal-right">
-                    <img src="./assets/4jacks_deck-1_1.png" alt="4Jacks Nitro Cold Brew Product">
-                </div>
+    <!-- ======= OUR STORY — bento tiles ======= -->
+    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 12px;">
+
+        <!-- Story text — wide -->
+        <div class="hb-tile hb-span-2c" style="grid-column:span 2;background:var(--cream);color:var(--espresso);display:flex;flex-direction:column;justify-content:center;">
+            <span class="hb-label text-red" style="margin-bottom:16px;">our story</span>
+            <h2 class="display-md" style="margin-bottom:20px;">we believe cold brew should be fast, easy, and delicious.</h2>
+            <p class="body-lg" style="opacity:0.8;margin-bottom:16px;">At 4Jacks Nitro, our customers refer to us as the #BoldColdSmooth Cold Brew. That's why we spent years perfecting a premium blend of Arabica roasts — crafted for smoothness, bold flavor, and versatility.</p>
+            <p class="body-md" style="opacity:0.7;">But we didn't stop at great Cold Brew. We also engineered patented dispenser technology that delivers a perfect pour — anytime, anywhere — with no gas tanks, no water lines, and no hassle.</p>
+        </div>
+
+        <!-- Product photo -->
+        <div class="hb-tile hb-product" style="background:var(--navy);color:var(--cream);">
+            <img src="./assets/Tequilla Espresso Martini.png" alt="Tequila Espresso Martini" style="max-height:220px;">
+            <span class="hb-label" style="color:rgba(245,230,211,0.5);">our craft</span>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;position:relative;">
+            <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+                <source src="./assets/vid-2.mp4" type="video/mp4">
+            </video>
+            <div style="position:absolute;bottom:16px;left:16px;z-index:2;">
+                <span class="hb-label" style="color:var(--white);background:rgba(0,0,0,0.4);padding:4px 10px;border-radius:6px;">nitro magic</span>
             </div>
         </div>
-    </section>
 
-    <!-- WAVE -->
-    <div class="wave-divider" style="background:var(--cream);margin-top:-1px;">
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="var(--navy)">
-            <path d="M0,40 C360,120 1080,0 1440,80 L1440,120 L0,120 Z"/>
-        </svg>
+        <!-- "What makes us different" text -->
+        <div class="hb-tile hb-center" style="background:var(--red);color:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <h3 class="display-sm" style="margin-bottom:12px;">what makes us<br>different?</h3>
+            <p class="body-md" style="opacity:0.85;max-width:260px;">True nitrogen generation. No compressed gas tanks. No water lines. Just plug in and pour.</p>
+        </div>
+
+        <!-- Classic Cold Brew product -->
+        <div class="hb-tile hb-product" style="background:var(--gold);color:var(--espresso);">
+            <span class="hb-label" style="opacity:0.4;">our blend</span>
+            <img src="./assets/Classic Cold Brew.png" alt="Classic Cold Brew" style="max-height:180px;">
+            <p style="font-family:var(--font-head);font-weight:700;font-size:0.9rem;">four bean arabica blend</p>
+        </div>
     </div>
 
-    <!-- MISSION -->
-    <section class="section-full bg-navy">
-        <div class="container text-center">
-            <div class="reveal">
-                <p class="label" style="color:var(--red);margin-bottom:20px;">our mission</p>
-                <h2 class="display-lg text-cream" style="max-width:800px;margin:0 auto 32px;">caffeinate the world with a better way to cold brew.</h2>
-                <p class="body-lg" style="color:var(--tan);max-width:600px;margin:0 auto 40px;">Join our mission. We're the fastest-growing draft cold brew brand in the U.S. — distributed by Sysco, PFG, Driscoll Foods, and US Foods.</p>
-                <a href="./contact.html" class="btn btn-red btn-lg">get in touch</a>
-            </div>
+    <!-- DOUBLE MARQUEE -->
+    <div class="marquee marquee-navy">
+        <div class="marquee-track">
+            <span class="marquee-text"><span class="dot"></span> four premium arabica beans <span class="dot"></span> 20 hour steep <span class="dot"></span> FDA inspected facility <span class="dot"></span> kosher certified (KSA) <span class="dot"></span> recyclable packaging <span class="dot"></span> 75% recycled content <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> four premium arabica beans <span class="dot"></span> 20 hour steep <span class="dot"></span> FDA inspected facility <span class="dot"></span> kosher certified (KSA) <span class="dot"></span> recyclable packaging <span class="dot"></span> 75% recycled content <span class="dot"></span></span>
         </div>
-    </section>
-
-    <!-- WAVE -->
-    <div class="wave-divider" style="background:var(--navy);margin-top:-1px;">
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="var(--cream-light)">
-            <path d="M0,80 C480,0 960,120 1440,40 L1440,120 L0,120 Z"/>
-        </svg>
+    </div>
+    <div class="marquee marquee-cream" style="margin-top:-1px;">
+        <div class="marquee-track" style="animation-direction:reverse;">
+            <span class="marquee-text"><span class="dot"></span> sweet without sugar <span class="dot"></span> smooth without cream <span class="dot"></span> only 9 calories <span class="dot"></span> $4 avg profit per serving <span class="dot"></span> 6 month shelf life <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> sweet without sugar <span class="dot"></span> smooth without cream <span class="dot"></span> only 9 calories <span class="dot"></span> $4 avg profit per serving <span class="dot"></span> 6 month shelf life <span class="dot"></span></span>
+        </div>
     </div>
 
-    <!-- VALUE IMAGE -->
-    <section class="section-full bg-cream">
-        <div class="container text-center">
-            <div class="reveal">
-                <img src="./assets/4jacks_deck-2_2.png" alt="4Jacks Value Proposition" style="border-radius:var(--radius-xl);box-shadow:0 20px 60px rgba(0,0,0,0.12);max-width:960px;margin:0 auto;">
+    <!-- ======= THE COLD BREW — product details ======= -->
+    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 12px;">
+
+        <!-- Big statement -->
+        <div class="hb-tile hb-span-3c hb-center" style="grid-column:1/-1;background:var(--teal);color:var(--cream);min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <span class="hb-label" style="color:var(--cream);opacity:0.5;margin-bottom:16px;">the cold brew</span>
+            <h2 class="display-lg">sweet without sugar.<br>smooth without cream.</h2>
+            <p class="body-lg" style="max-width:560px;opacity:0.85;margin-top:12px;">Nitrogen creates micro-bubbles for a foamy head, sweet flavor, and velvety texture. No sugar, no cream — only 9 calories per 12oz serving.</p>
+        </div>
+
+        <!-- Ice Cream Float -->
+        <div class="hb-tile hb-product" style="background:var(--red);color:var(--white);">
+            <span class="hb-label" style="color:rgba(255,255,255,0.5);">crowd favorite</span>
+            <img src="./assets/Nitro Ice Cream Float.png" alt="Nitro Ice Cream Float" style="max-height:200px;">
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;position:relative;">
+            <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+                <source src="./assets/vid-4.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Caffeinated Affogato -->
+        <div class="hb-tile hb-product" style="background:var(--espresso);color:var(--cream);border:1px solid rgba(245,230,211,0.08);">
+            <span class="hb-label" style="color:var(--gold);">dessert</span>
+            <img src="./assets/Caffeinated Affogato.png" alt="Caffeinated Affogato" style="max-height:200px;">
+        </div>
+
+        <!-- BIB + Dispenser details -->
+        <div class="hb-tile hb-center" style="background:var(--cream);color:var(--espresso);border:1px solid rgba(60,36,21,0.06);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <span class="hb-label text-red" style="margin-bottom:16px;">convenience</span>
+            <h3 class="display-sm" style="margin-bottom:12px;">pour from a box<br>or a dispenser.</h3>
+            <p class="body-md" style="opacity:0.7;max-width:260px;">Our cold brew packaging includes a gravity-fed tap. Or use our patented countertop or standard dispensers.</p>
+        </div>
+
+        <!-- Cherry Garcia -->
+        <div class="hb-tile hb-product" style="background:var(--amber);color:var(--white);">
+            <span class="hb-label" style="color:rgba(255,255,255,0.5);">indulgent</span>
+            <img src="./assets/Cherry Garcia.png" alt="Cherry Garcia" style="max-height:200px;">
+        </div>
+    </div>
+
+    <!-- MARQUEE -->
+    <div class="marquee marquee-red">
+        <div class="marquee-track">
+            <span class="marquee-text"><span class="dot"></span> sysco <span class="dot"></span> PFG <span class="dot"></span> driscoll foods <span class="dot"></span> US foods <span class="dot"></span> nationwide distribution <span class="dot"></span> fastest growing draft cold brew brand <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> sysco <span class="dot"></span> PFG <span class="dot"></span> driscoll foods <span class="dot"></span> US foods <span class="dot"></span> nationwide distribution <span class="dot"></span> fastest growing draft cold brew brand <span class="dot"></span></span>
+        </div>
+    </div>
+
+    <!-- ======= MISSION + VALUE PROP ======= -->
+    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 12px;">
+
+        <!-- Mission statement -->
+        <div class="hb-tile hb-span-3c hb-center" style="grid-column:1/-1;background:var(--navy);color:var(--cream);min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <span class="hb-label" style="color:var(--gold);margin-bottom:20px;">our mission</span>
+            <h2 class="display-huge" style="margin-bottom:20px;">caffeinate the world<br>with a <span class="text-red">better way.</span></h2>
+            <p class="body-lg" style="color:var(--tan);max-width:560px;">Join our mission. We're the fastest-growing draft cold brew brand in the U.S. — distributed by Sysco, PFG, Driscoll Foods, and US Foods.</p>
+        </div>
+
+        <!-- Value Prop image — wide -->
+        <div class="hb-tile hb-span-2c hb-split" style="grid-column:span 2;background:var(--espresso);color:var(--cream);min-height:400px;display:flex;flex-direction:row;align-items:center;">
+            <img src="./assets/4jacks_deck-2_2.png" alt="4Jacks Value Proposition" style="border-radius:var(--radius-md);">
+            <div>
+                <span class="hb-label" style="color:var(--gold);margin-bottom:12px;display:block;">the numbers</span>
+                <h3 class="display-md" style="margin-bottom:16px;">the 4jacks<br><span class="text-red">value prop.</span></h3>
+                <p class="body-md" style="color:var(--tan);max-width:300px;">$4 avg profit per serving. 10-second pour. 6-month shelf life. Zero gas tanks needed.</p>
+                <a href="./contact.html" class="btn btn-red btn-sm" style="margin-top:20px;">request a demo</a>
             </div>
         </div>
-    </section>
+
+        <!-- VIDEO 4 -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;position:relative;">
+            <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+                <source src="./assets/vid-5.mp4" type="video/mp4">
+            </video>
+            <div style="position:absolute;bottom:16px;left:16px;z-index:2;">
+                <span class="hb-label" style="color:var(--white);background:rgba(0,0,0,0.4);padding:4px 10px;border-radius:6px;">smooth pour</span>
+            </div>
+        </div>
+
+        <!-- Dispenser specs -->
+        <div class="hb-tile hb-center" style="background:var(--tan);color:var(--espresso);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <span class="hb-label" style="opacity:0.4;margin-bottom:12px;">countertop dispenser</span>
+            <h3 class="display-sm" style="margin-bottom:8px;">20.3" x 16.9"<br>x 19.5"</h3>
+            <p class="body-md" style="opacity:0.7;">5-liter bag-in-box. Pours 210oz of nitro cold brew.</p>
+        </div>
+
+        <div class="hb-tile hb-center" style="background:var(--gold);color:var(--espresso);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <span class="hb-label" style="opacity:0.4;margin-bottom:12px;">standard dispenser</span>
+            <h3 class="display-sm" style="margin-bottom:8px;">36" x 24.3"<br>x 24"</h3>
+            <p class="body-md" style="opacity:0.7;">Two 4.75-gallon bags. Dual faucet: nitro + still.</p>
+        </div>
+
+        <!-- Old Fashioned -->
+        <div class="hb-tile hb-product" style="background:var(--navy);color:var(--cream);">
+            <span class="hb-label" style="color:rgba(245,230,211,0.5);">cocktail</span>
+            <img src="./assets/4Jacks Old Fashioned.png" alt="Cold Brew Old Fashioned" style="max-height:180px;">
+        </div>
+    </div>
+
+    <!-- ======= LIFESTYLE GALLERY ======= -->
+    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 12px;">
+
+        <!-- Section header -->
+        <div class="hb-tile hb-span-3c hb-center" style="grid-column:1/-1;background:var(--red);color:var(--white);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <span class="hb-label" style="color:var(--white);opacity:0.5;margin-bottom:16px;">in the wild</span>
+            <h2 class="display-lg">4jacks <em>everywhere.</em></h2>
+        </div>
+
+        <!-- Restaurant partner -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/D2C68ADE-F20B-45EF-92B0-2E8148766570.JPG" alt="4Jacks at Brownstone Pancake Factory" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+
+        <!-- VIDEO 5 -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;position:relative;">
+            <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+                <source src="./assets/vid-3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Media day -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/8D67F441-8D52-4E32-AF79-12CA2DCC409D.JPG" alt="4Jacks Media Day" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+
+        <!-- Blue poster -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/IMG_0586.jpg" alt="4Jacks Cold Brew Coffee" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+
+        <!-- Fan love -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/D952C367-4AEE-40EE-8A1C-ECE11F1F6670.JPG" alt="4Jacks fan" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+
+        <!-- Cold foam menu -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/IMG_0585.jpg" alt="4Jacks Cold Foam Menu" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+
+        <!-- VIDEO 6 -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;position:relative;">
+            <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+                <source src="./assets/vid-6.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Nutty Latte -->
+        <div class="hb-tile hb-product" style="background:var(--tan);color:var(--espresso);">
+            <span class="hb-label" style="opacity:0.4;">indulgent</span>
+            <img src="./assets/Nutty Latte.png" alt="Nutty Latte" style="max-height:180px;">
+        </div>
+
+        <!-- White Russian -->
+        <div class="hb-tile hb-product" style="background:var(--espresso);color:var(--cream);border:1px solid rgba(245,230,211,0.08);">
+            <span class="hb-label" style="color:var(--gold);">classic</span>
+            <img src="./assets/Cold Brew White Russian.png" alt="Cold Brew White Russian" style="max-height:180px;">
+        </div>
+    </div>
+
+    <!-- STATS MARQUEE -->
+    <div class="marquee marquee-red">
+        <div class="marquee-track">
+            <span class="marquee-text"><span class="dot"></span> $4 avg profit per serving <span class="dot"></span> 10 second pour <span class="dot"></span> 6 month shelf life <span class="dot"></span> 0 gas tanks <span class="dot"></span> 9 calories <span class="dot"></span> $2.6B industry <span class="dot"></span> 26% annual growth <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> $4 avg profit per serving <span class="dot"></span> 10 second pour <span class="dot"></span> 6 month shelf life <span class="dot"></span> 0 gas tanks <span class="dot"></span> 9 calories <span class="dot"></span> $2.6B industry <span class="dot"></span> 26% annual growth <span class="dot"></span></span>
+        </div>
+    </div>
 
     <!-- CTA -->
-    <section class="cta-banner bg-red">
+    <section class="cta-banner bg-espresso" style="padding-top:clamp(60px,8vw,100px);">
         <div class="reveal">
-            <h2 class="display-lg" style="color:var(--white);margin-bottom:28px;">ready to serve the<br>smoothest nitro?</h2>
-            <a href="./contact.html" class="btn btn-white btn-xl">contact us today</a>
+            <img src="./assets/download-300x270.png" alt="4Jacks" style="width:80px;margin:0 auto 28px;filter:drop-shadow(0 4px 16px rgba(0,0,0,0.3));">
+            <h2 class="display-huge text-cream" style="margin-bottom:20px;">ready to serve the<br><span class="text-red">smoothest nitro?</span></h2>
+            <p class="body-lg" style="color:var(--tan);max-width:480px;margin:0 auto 36px;">Free 15-minute demo. No commitment. We come to you.</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <a href="./contact.html" class="btn btn-red btn-xl">contact us today</a>
+                <a href="tel:+19145880737" class="btn btn-outline btn-lg" style="color:var(--cream);border-color:var(--tan);">(914) 588-0737</a>
+            </div>
         </div>
     </section>
 
-    <!-- WAVE + FOOTER -->
-    <div class="wave-divider" style="background:var(--red);margin-top:-1px;">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" fill="var(--espresso)">
-            <path d="M0,50 C360,100 1080,0 1440,70 L1440,100 L0,100 Z"/>
-        </svg>
-    </div>
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">

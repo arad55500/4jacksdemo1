@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>4Jacks Nitro Cold Brew | Draft Nitro for Your Business</title>
     <meta name="description" content="4Jacks Nitro Cold Brew — premium, locally brewed draft nitro cold brew for restaurants, cafés, bars & businesses. No tanks. No hassle.">
     <link rel="icon" type="image/png" href="./assets/download-300x270.png">
@@ -13,13 +13,11 @@
 </head>
 <body>
 
-    <!-- ======= HEADER ======= -->
+    <!-- HEADER -->
     <header class="header at-top" id="header">
         <div class="header-bg"></div>
         <div class="header-inner">
-            <a href="./index.html" class="logo-link">
-                <img src="./assets/logo.svg" alt="4Jacks Nitro Cold Brew" class="logo-img">
-            </a>
+            <a href="./index.html" class="logo-link"><img src="./assets/logo.svg" alt="4Jacks Nitro Cold Brew" class="logo-img"></a>
             <nav class="nav">
                 <a href="./shop.html" class="nav-link">shop</a>
                 <a href="./about.html" class="nav-link">our story</a>
@@ -29,85 +27,21 @@
                 <a href="./community.html" class="nav-link">community</a>
                 <a href="./contact.html" class="nav-link nav-link-cta">contact us</a>
             </nav>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
         <nav class="mobile-nav" id="mobileNav">
-            <a href="./shop.html">shop</a>
-            <a href="./about.html">our story</a>
-            <a href="./drinks.html">mixology</a>
-            <a href="./find-us.html">find 4jacks</a>
-            <a href="./investor.html">investors</a>
-            <a href="./community.html">community</a>
-            <a href="./faq.html">faq</a>
-            <a href="./contact.html">contact us</a>
+            <a href="./shop.html">shop</a><a href="./about.html">our story</a><a href="./drinks.html">mixology</a><a href="./find-us.html">find 4jacks</a><a href="./investor.html">investors</a><a href="./community.html">community</a><a href="./faq.html">faq</a><a href="./contact.html">contact us</a>
         </nav>
     </header>
 
-    <!-- ============================================================
-         POPPI-STYLE DENSE BENTO HOMEPAGE
-         ============================================================ -->
+    <!-- HERO VIDEO — horizontal strip at top -->
+    <section class="hero-video-strip" aria-label="4Jacks nitro cold brew pour">
+        <video class="hero-video-strip__video" autoplay muted loop playsinline preload="auto">
+            <source src="./assets/vid-1.mp4" type="video/mp4">
+        </video>
+    </section>
 
-    <!-- ======= HERO BENTO ROW 1 (3-col) ======= -->
-    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:72px 12px 0;">
-
-        <!-- HERO TEXT — spans full width -->
-        <div class="hb-tile hb-hero-text hb-span-3c" style="grid-column:1/-1;background:var(--espresso);color:var(--cream);min-height:auto;padding-top:clamp(48px,6vw,80px);padding-bottom:clamp(48px,6vw,80px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-            <img src="./assets/download-300x270.png" alt="4Jacks" class="hb-badge">
-            <h1 class="display-huge" style="color:var(--cream);text-align:center;">serve the <span class="highlight">smoothest</span> nitro.</h1>
-            <p class="body-lg" style="color:var(--tan);max-width:500px;text-align:center;">Four Bean Arabica Blend. Locally Brewed. No Tanks. No Hassle.</p>
-            <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-                <a href="./contact.html" class="btn btn-red btn-lg">get 4jacks in my business</a>
-                <a href="./find-us.html" class="btn btn-outline btn-lg" style="color:var(--cream);border-color:var(--tan);">find us near you</a>
-            </div>
-        </div>
-
-        <!-- ESPRESSO MARTINI -->
-        <div class="hb-tile hb-product" style="background:var(--red);color:var(--white);">
-            <span class="hb-label" style="color:rgba(255,255,255,0.6);">signature pour</span>
-            <img src="./assets/43a0b130959e9d3fda1c28517f12d28f.png" alt="Nitro Espresso Martini">
-            <a href="./drinks.html" class="btn btn-cream btn-sm">espresso martini</a>
-        </div>
-
-        <!-- "VARIETY" TEXT -->
-        <div class="hb-tile hb-center" style="background:var(--gold);color:var(--espresso);">
-            <span class="hb-label" style="color:var(--espresso);opacity:0.4;margin-bottom:8px;">drink inspirations</span>
-            <h2 class="display-md">variety is the<br><em>spice of cold brew.</em></h2>
-            <a href="./drinks.html" class="btn btn-espresso btn-sm" style="margin-top:16px;">explore all drinks</a>
-        </div>
-
-        <!-- ICE CREAM FLOAT -->
-        <div class="hb-tile hb-product" style="background:var(--navy);color:var(--cream);">
-            <span class="hb-label" style="color:rgba(245,230,211,0.5);">crowd favorite</span>
-            <img src="./assets/IceCreamFloat-165x300.png" alt="Nitro Ice Cream Float">
-            <a href="./drinks.html" class="btn btn-cream btn-sm">ice cream float</a>
-        </div>
-
-        <!-- HAWAIIAN HIBISCUS -->
-        <div class="hb-tile hb-product" style="background:var(--teal);color:var(--cream);">
-            <span class="hb-label" style="color:rgba(245,230,211,0.5);">tropical</span>
-            <img src="./assets/Hawaiian-Hibiscus-Cold-Brew-1-197x300.jpg" alt="Hawaiian Hibiscus Cold Brew">
-            <a href="./drinks.html" class="btn btn-cream btn-sm">hawaiian hibiscus</a>
-        </div>
-
-        <!-- SALTED CARAMEL -->
-        <div class="hb-tile hb-product" style="background:var(--tan);color:var(--espresso);">
-            <span class="hb-label" style="opacity:0.4;">refreshing</span>
-            <img src="./assets/Picture1-197x300.jpg" alt="Salted Caramel Pineapple Lemonade">
-            <a href="./drinks.html" class="btn btn-espresso btn-sm">salted caramel</a>
-        </div>
-
-        <!-- STRAWBERRY FIZZ -->
-        <div class="hb-tile hb-product" style="background:var(--red);color:var(--white);">
-            <span class="hb-label" style="color:rgba(255,255,255,0.5);">summer vibes</span>
-            <img src="./assets/Iced-Strawberry-Nitro-Fizz-197x300.jpg" alt="Iced Strawberry Nitro Fizz">
-            <a href="./drinks.html" class="btn btn-cream btn-sm">strawberry fizz</a>
-        </div>
-
-    </div>
-
-    <!-- ======= MARQUEE 1 ======= -->
+    <!-- MARQUEE -->
     <div class="marquee marquee-red">
         <div class="marquee-track">
             <span class="marquee-text"><span class="dot"></span> #boldcoldsmooth <span class="dot"></span> smooth without cream <span class="dot"></span> sweet without sugar <span class="dot"></span> only 9 calories <span class="dot"></span> no tanks needed <span class="dot"></span> locally brewed <span class="dot"></span> stay feisty <span class="dot"></span></span>
@@ -115,147 +49,147 @@
         </div>
     </div>
 
-    <!-- ======= BENTO ROW 2 — more products + testimonial ======= -->
-    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 12px;">
+    <!-- ======= ROW 2: BUSINESS + MORE DRINKS ======= -->
+    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 10px;">
 
-        <!-- CHERRY LEMONADE -->
-        <div class="hb-tile hb-product" style="background:var(--tan);color:var(--espresso);">
-            <span class="hb-label" style="opacity:0.4;">refreshing</span>
-            <img src="./assets/Cherry-Coffee-Lemonade-197x300.jpg" alt="Cherry Coffee Lemonade">
-            <a href="./drinks.html" class="btn btn-espresso btn-sm">cherry lemonade</a>
+        <!-- Boost your menu — wide -->
+        <div class="hb-tile hb-span-2c hb-center" style="grid-column:span 2;background:var(--espresso);color:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <span class="hb-label" style="color:var(--red);margin-bottom:12px;">for your business</span>
+            <h2 class="display-md">boost your <span class="text-red">menu.</span></h2>
+            <p class="body-md" style="color:var(--tan);margin-top:10px;max-width:400px;">From all-ages drinks to craft cocktails — 4Jacks is the most versatile ingredient behind your bar.</p>
+            <a href="./drinks.html" class="btn btn-red btn-sm" style="margin-top:16px;">see all recipes</a>
         </div>
 
-        <!-- BIG TEXT: boost your menu — spans 2 cols for breathing room -->
-        <div class="hb-tile hb-center hb-span-2c" style="grid-column:span 2;background:var(--espresso);color:var(--cream);min-height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-            <span class="hb-label" style="color:var(--red);margin-bottom:16px;">for your business</span>
-            <h2 class="display-lg">boost your<br><span class="text-red">menu.</span></h2>
-            <p class="body-lg" style="color:var(--tan);margin-top:16px;max-width:480px;">From all-ages drinks to craft cocktails — 4Jacks is the most versatile ingredient behind your bar.</p>
-            <a href="./drinks.html" class="btn btn-red btn-sm" style="margin-top:20px;">see all recipes</a>
+        <!-- White Russian -->
+        <div class="hb-tile hb-product hb-product-glow" style="background:var(--espresso);border:1px solid rgba(245,230,211,0.08);">
+            <span class="hb-label" style="color:var(--gold);">classic</span>
+            <img src="./assets/Cold Brew White Russian.png" alt="Cold Brew White Russian">
+            <a href="./drinks.html" class="btn btn-cream btn-sm">white russian</a>
         </div>
 
-        <!-- MANGO HIBISCUS -->
-        <div class="hb-tile hb-product" style="background:var(--amber);color:var(--white);">
-            <span class="hb-label" style="color:rgba(255,255,255,0.5);">tropical</span>
-            <img src="./assets/Mango-Hibiscus-Cold-Brew-197x300.jpg" alt="Mango Hibiscus Cold Brew">
-            <a href="./drinks.html" class="btn btn-white btn-sm">mango hibiscus</a>
+        <!-- Cherry Garcia -->
+        <div class="hb-tile hb-product hb-product-glow" style="background:var(--red);">
+            <span class="hb-label" style="color:rgba(255,255,255,0.5);">indulgent</span>
+            <img src="./assets/Cherry Garcia.png" alt="Cherry Garcia">
+            <a href="./drinks.html" class="btn btn-cream btn-sm">cherry garcia</a>
         </div>
 
-        <!-- TESTIMONIAL — wider, more prominent -->
-        <div class="hb-tile hb-testimonial hb-center" style="color:var(--espresso);">
-            <span class="hb-label" style="color:var(--gold);margin-bottom:20px;">what businesses really think</span>
-            <p class="hb-testimonial-quote">"The smoothest cold brew we've ever served. Our customers can't get enough. Setup was a breeze — no tanks, no hassle."</p>
-            <p class="hb-testimonial-author">— Restaurant Owner, New York</p>
+        <!-- Testimonial -->
+        <div class="hb-tile hb-testimonial hb-center" style="color:var(--espresso);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <span class="hb-label" style="color:var(--gold);margin-bottom:14px;">what businesses think</span>
+            <p class="hb-testimonial-quote">"The smoothest cold brew we've ever served. Our customers can't get enough."</p>
+            <p class="hb-testimonial-author">— Restaurant Owner, NY</p>
         </div>
 
-        <!-- STRAWBERRY FIZZ -->
-        <div class="hb-tile hb-product" style="background:var(--navy);color:var(--cream);">
-            <span class="hb-label" style="color:rgba(245,230,211,0.5);">summer vibes</span>
-            <img src="./assets/Iced-Strawberry-Nitro-Fizz-197x300.jpg" alt="Iced Strawberry Nitro Fizz">
-            <a href="./drinks.html" class="btn btn-cream btn-sm">strawberry fizz</a>
+        <!-- Cold Irish Coffee -->
+        <div class="hb-tile hb-product hb-product-glow" style="background:var(--navy);">
+            <span class="hb-label" style="color:rgba(245,230,211,0.5);">irish</span>
+            <img src="./assets/Cold Irish Coffee.png" alt="Cold Irish Coffee">
+            <a href="./drinks.html" class="btn btn-cream btn-sm">irish coffee</a>
         </div>
-
     </div>
 
-    <!-- ======= DOUBLE MARQUEE (like Poppi) ======= -->
+    <!-- DOUBLE MARQUEE -->
     <div class="marquee marquee-navy">
         <div class="marquee-track">
-            <span class="marquee-text"><span class="dot"></span> restaurants <span class="dot"></span> coffee shops <span class="dot"></span> bars <span class="dot"></span> offices <span class="dot"></span> event spaces <span class="dot"></span> stadiums <span class="dot"></span> arenas <span class="dot"></span> hotels <span class="dot"></span></span>
-            <span class="marquee-text"><span class="dot"></span> restaurants <span class="dot"></span> coffee shops <span class="dot"></span> bars <span class="dot"></span> offices <span class="dot"></span> event spaces <span class="dot"></span> stadiums <span class="dot"></span> arenas <span class="dot"></span> hotels <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> restaurants <span class="dot"></span> coffee shops <span class="dot"></span> bars <span class="dot"></span> offices <span class="dot"></span> event spaces <span class="dot"></span> stadiums <span class="dot"></span> hotels <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> restaurants <span class="dot"></span> coffee shops <span class="dot"></span> bars <span class="dot"></span> offices <span class="dot"></span> event spaces <span class="dot"></span> stadiums <span class="dot"></span> hotels <span class="dot"></span></span>
         </div>
     </div>
     <div class="marquee marquee-cream" style="margin-top:-1px;">
         <div class="marquee-track" style="animation-direction:reverse;">
-            <span class="marquee-text"><span class="dot"></span> four bean arabica blend <span class="dot"></span> FDA inspected <span class="dot"></span> 20 hour steep <span class="dot"></span> kosher certified <span class="dot"></span> no sugar <span class="dot"></span> no cream <span class="dot"></span> recyclable packaging <span class="dot"></span></span>
-            <span class="marquee-text"><span class="dot"></span> four bean arabica blend <span class="dot"></span> FDA inspected <span class="dot"></span> 20 hour steep <span class="dot"></span> kosher certified <span class="dot"></span> no sugar <span class="dot"></span> no cream <span class="dot"></span> recyclable packaging <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> four bean arabica blend <span class="dot"></span> FDA inspected <span class="dot"></span> 20 hour steep <span class="dot"></span> kosher certified <span class="dot"></span> recyclable packaging <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> four bean arabica blend <span class="dot"></span> FDA inspected <span class="dot"></span> 20 hour steep <span class="dot"></span> kosher certified <span class="dot"></span> recyclable packaging <span class="dot"></span></span>
         </div>
     </div>
 
-    <!-- ======= "OUR STORY" + "WHY 4JACKS" VIDEO SECTIONS ======= -->
-    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 12px;">
+    <!-- ======= ROW 3: OUR STORY + LIFESTYLE ======= -->
+    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 10px;">
 
-        <!-- OUR STORY — video box -->
-        <div class="hb-tile hb-center hb-span-2c" style="grid-column:span 2;background:var(--espresso);color:var(--cream);min-height:420px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-            <div class="video-box reveal" style="width:100%;max-width:560px;aspect-ratio:16/9;background:var(--dark);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;margin-bottom:24px;overflow:hidden;border:2px solid rgba(245,230,211,0.08);">
-                <div style="text-align:center;padding:20px;">
-                    <svg viewBox="0 0 64 64" fill="none" style="width:48px;height:48px;color:var(--red);margin-bottom:12px;"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.1"/><path d="M26 20l20 12-20 12V20z" fill="currentColor"/></svg>
-                    <p class="label" style="color:var(--tan);margin-top:8px;">video coming soon</p>
-                </div>
-            </div>
-            <span class="hb-label" style="color:var(--red);margin-bottom:8px;">our story</span>
+        <!-- Our Story — dispenser photo -->
+        <div class="hb-tile hb-span-2c" style="grid-column:span 2;background:var(--espresso);color:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(24px,3vw,40px);">
+            <img src="./assets/2473D9B9-23D9-460D-977F-9D036FEB94E1.jpeg" alt="4Jacks dispenser" style="width:100%;max-width:420px;border-radius:var(--radius-md);margin-bottom:20px;box-shadow:0 10px 32px rgba(0,0,0,0.3);">
+            <span class="hb-label" style="color:var(--red);margin-bottom:6px;">our story</span>
             <h3 class="display-sm text-cream">the journey behind every pour.</h3>
-            <p class="body-md" style="color:var(--tan);margin-top:8px;max-width:440px;">How we perfected the #BoldColdSmooth cold brew — from bean to bag to beautiful pour.</p>
+            <a href="./about.html" class="btn btn-red btn-sm" style="margin-top:12px;">read our story</a>
         </div>
 
-        <!-- WHY 4JACKS — video box -->
-        <div class="hb-tile hb-center" style="background:var(--navy);color:var(--cream);min-height:420px;">
-            <div class="video-box reveal" style="width:100%;aspect-ratio:9/12;max-height:240px;background:var(--navy-dark);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;margin-bottom:24px;overflow:hidden;border:2px solid rgba(245,230,211,0.06);">
-                <div style="text-align:center;padding:20px;">
-                    <svg viewBox="0 0 64 64" fill="none" style="width:40px;height:40px;color:var(--red);margin-bottom:8px;"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.1"/><path d="M26 20l20 12-20 12V20z" fill="currentColor"/></svg>
-                    <p class="label" style="color:var(--tan);font-size:0.65rem;margin-top:6px;">video coming soon</p>
-                </div>
-            </div>
-            <span class="hb-label" style="color:var(--gold);margin-bottom:8px;">why 4jacks?</span>
-            <h3 class="display-sm text-cream">what makes us different.</h3>
+        <!-- Brand poster -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/Red Gatorboard_2025.jpg" alt="4Jacks Brand" style="width:100%;height:100%;object-fit:cover;">
         </div>
 
+        <!-- Restaurant partner -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/D2C68ADE-F20B-45EF-92B0-2E8148766570.JPG" alt="4Jacks at Brownstone Pancake Factory" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;"><source src="./assets/vid-4.mp4" type="video/mp4"></video>
+        </div>
+
+        <!-- Fan love -->
+        <div class="hb-tile" style="background:var(--dark);padding:0;overflow:hidden;">
+            <img src="./assets/D952C367-4AEE-40EE-8A1C-ECE11F1F6670.JPG" alt="4Jacks fan" style="width:100%;height:100%;object-fit:cover;">
+        </div>
     </div>
 
-    <!-- ======= BENTO ROW 3b — statement + steps ======= -->
-    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 12px;">
+    <!-- ======= WHY 4JACKS + STEPS ======= -->
+    <div class="home-bento" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 10px;">
 
-        <!-- WHY 4JACKS — full-width hero statement -->
-        <div class="hb-tile hb-span-3c hb-center" style="grid-column:1/-1;background:var(--red);color:var(--white);min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-            <h2 class="display-huge" style="margin-bottom:20px;">no tanks. no hassle.<br>just cold brew magic.</h2>
-            <p class="body-lg" style="max-width:620px;opacity:0.85;">Patented nitrogen-generating dispensers. Four premium Arabica beans steeped 20 hours. Distributed by Sysco, PFG &amp; US Foods.</p>
-            <a href="./about.html" class="btn btn-white btn-sm" style="margin-top:24px;">read our story</a>
+        <!-- WHY — full width -->
+        <div class="hb-tile hb-span-3c hb-center" style="grid-column:1/-1;background:var(--red);color:var(--white);min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+            <h2 class="display-lg" style="margin-bottom:16px;">no tanks. no hassle.<br>just cold brew magic.</h2>
+            <p class="body-lg" style="max-width:560px;opacity:0.85;">Patented nitrogen-generating dispensers. Four premium Arabica beans steeped 20 hours.</p>
+            <a href="./about.html" class="btn btn-white btn-sm" style="margin-top:20px;">learn more</a>
         </div>
 
-        <!-- 4 STEP BLOCKS — each a different color -->
-        <div class="hb-tile hb-center" style="background:var(--amber);color:var(--white);">
+        <!-- Steps -->
+        <div class="hb-tile hb-center" style="background:var(--amber);color:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
             <div class="step-num" style="color:rgba(255,255,255,0.5);">01</div>
             <h3 class="display-sm">we brew it</h3>
-            <p class="body-md" style="opacity:0.85;margin-top:8px;">20-hour steep in our FDA-inspected facility.</p>
+            <p class="body-md" style="opacity:0.85;margin-top:6px;">20-hour steep. FDA-inspected.</p>
         </div>
-        <div class="hb-tile hb-center" style="background:var(--teal);color:var(--cream);">
+        <div class="hb-tile hb-center" style="background:var(--teal);color:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
             <div class="step-num" style="color:rgba(245,230,211,0.4);">02</div>
             <h3 class="display-sm">we deliver it</h3>
-            <p class="body-md" style="opacity:0.8;margin-top:8px;">Recyclable bag-in-box via all major broadliners.</p>
+            <p class="body-md" style="opacity:0.8;margin-top:6px;">Recyclable bag-in-box.</p>
         </div>
-        <div class="hb-tile hb-center" style="background:var(--espresso);color:var(--cream);">
+        <div class="hb-tile hb-center" style="background:var(--espresso);color:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
             <div class="step-num" style="color:rgba(245,230,211,0.4);">03</div>
             <h3 class="display-sm">you pour it</h3>
-            <p class="body-md" style="opacity:0.75;margin-top:8px;">10-second pour. Under a minute to swap bags.</p>
+            <p class="body-md" style="opacity:0.75;margin-top:6px;">10-second pour.</p>
         </div>
 
-        <!-- VALUE PROP — wide split tile -->
-        <div class="hb-tile hb-span-2c hb-split" style="grid-column:span 2;background:var(--navy);color:var(--cream);min-height:400px;display:flex;flex-direction:row;align-items:center;">
+        <!-- Value Prop — wide -->
+        <div class="hb-tile hb-span-2c hb-split" style="grid-column:span 2;background:var(--navy);color:var(--cream);display:flex;flex-direction:row;align-items:center;">
             <img src="./assets/4jacks_deck-2_2.png" alt="4Jacks Value Proposition" style="border-radius:var(--radius-md);">
             <div>
-                <span class="hb-label" style="color:var(--gold);margin-bottom:12px;display:block;">the numbers</span>
-                <h3 class="display-md" style="margin-bottom:16px;">the 4jacks<br><span class="text-red">value prop.</span></h3>
-                <p class="body-md" style="color:var(--tan);max-width:320px;">$4 avg profit per serving. 10-second pour. 6-month shelf life. Zero gas tanks needed.</p>
-                <a href="./contact.html" class="btn btn-red btn-sm" style="margin-top:20px;">request a demo</a>
+                <span class="hb-label" style="color:var(--gold);margin-bottom:10px;display:block;">the numbers</span>
+                <h3 class="display-sm" style="margin-bottom:10px;">the 4jacks<br><span class="text-red">value prop.</span></h3>
+                <p class="body-md" style="color:var(--tan);max-width:280px;">$4 profit/serving. 10s pour. 6mo shelf life. 0 gas tanks.</p>
+                <a href="./contact.html" class="btn btn-red btn-sm" style="margin-top:14px;">request a demo</a>
             </div>
         </div>
 
-        <!-- STEP 04 + BRAND -->
-        <div class="hb-tile hb-center" style="background:var(--gold);color:var(--espresso);">
+        <!-- Step 04 -->
+        <div class="hb-tile hb-center" style="background:var(--gold);color:var(--espresso);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
             <div class="step-num" style="color:rgba(60,36,21,0.35);">04</div>
             <h3 class="display-sm">customers love it</h3>
-            <p class="body-md" style="opacity:0.75;margin-top:8px;">Bold. Cold. Smooth.</p>
+            <p class="body-md" style="opacity:0.75;margin-top:6px;">Bold. Cold. Smooth.</p>
         </div>
-
     </div>
 
-    <!-- ======= STATS MARQUEE ======= -->
+    <!-- MARQUEE -->
     <div class="marquee marquee-red">
         <div class="marquee-track">
-            <span class="marquee-text"><span class="dot"></span> $4 avg profit per serving <span class="dot"></span> 10 second pour <span class="dot"></span> 6 month shelf life <span class="dot"></span> 0 gas tanks needed <span class="dot"></span> 9 calories per serving <span class="dot"></span> $2.6B industry <span class="dot"></span> 26% annual growth <span class="dot"></span></span>
-            <span class="marquee-text"><span class="dot"></span> $4 avg profit per serving <span class="dot"></span> 10 second pour <span class="dot"></span> 6 month shelf life <span class="dot"></span> 0 gas tanks needed <span class="dot"></span> 9 calories per serving <span class="dot"></span> $2.6B industry <span class="dot"></span> 26% annual growth <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> $4 avg profit <span class="dot"></span> 10 second pour <span class="dot"></span> 6 month shelf life <span class="dot"></span> 0 gas tanks <span class="dot"></span> 9 calories <span class="dot"></span> $2.6B industry <span class="dot"></span> 26% growth <span class="dot"></span></span>
+            <span class="marquee-text"><span class="dot"></span> $4 avg profit <span class="dot"></span> 10 second pour <span class="dot"></span> 6 month shelf life <span class="dot"></span> 0 gas tanks <span class="dot"></span> 9 calories <span class="dot"></span> $2.6B industry <span class="dot"></span> 26% growth <span class="dot"></span></span>
         </div>
     </div>
 
-    <!-- ======= DISTRIBUTOR LOGOS ======= -->
+    <!-- DISTRIBUTOR LOGOS -->
     <div class="logo-bar" style="background:var(--cream-light);">
         <div class="logo-bar-track">
             <span class="logo-bar-item">Sysco</span><span class="logo-bar-item">PFG</span><span class="logo-bar-item">Driscoll Foods</span><span class="logo-bar-item">US Foods</span>
@@ -264,56 +198,33 @@
         </div>
     </div>
 
-    <!-- ======= CTA — full-bleed dark section ======= -->
+    <!-- CTA -->
     <div class="wave-divider" style="background:var(--cream-light);margin-top:-1px;">
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="var(--espresso)">
-            <path d="M0,40 C360,120 1080,0 1440,80 L1440,120 L0,120 Z"/>
-        </svg>
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="var(--espresso)"><path d="M0,40 C360,120 1080,0 1440,80 L1440,120 L0,120 Z"/></svg>
     </div>
-    <section class="cta-banner bg-espresso" style="padding-top:clamp(60px,8vw,100px);">
+    <section class="cta-banner bg-espresso" style="padding-top:clamp(48px,6vw,80px);">
         <div class="reveal">
-            <img src="./assets/download-300x270.png" alt="4Jacks" style="width:80px;margin:0 auto 28px;filter:drop-shadow(0 4px 16px rgba(0,0,0,0.3));">
-            <h2 class="display-huge text-cream" style="margin-bottom:20px;">let's pour<br>something great.</h2>
-            <p class="body-lg" style="color:var(--tan);max-width:480px;margin:0 auto 36px;">Free 15-minute demo. No commitment. We come to you.</p>
-            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-                <a href="./contact.html" class="btn btn-red btn-xl">contact us today</a>
-                <a href="tel:+19145880737" class="btn btn-outline btn-lg" style="color:var(--cream);border-color:var(--tan);">(914) 588-0737</a>
+            <img src="./assets/download-300x270.png" alt="4Jacks" style="width:72px;margin:0 auto 24px;filter:drop-shadow(0 4px 16px rgba(0,0,0,0.3));">
+            <h2 class="display-lg text-cream" style="margin-bottom:16px;">let's pour something <span class="text-red">great.</span></h2>
+            <p class="body-md" style="color:var(--tan);max-width:400px;margin:0 auto 28px;">Free 15-minute demo. No commitment. We come to you.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                <a href="./contact.html" class="btn btn-red btn-lg">contact us today</a>
+                <a href="tel:+19145880737" class="btn btn-outline btn-sm" style="color:var(--cream);border-color:var(--tan);">(914) 588-0737</a>
             </div>
         </div>
     </section>
 
-    <!-- ======= FOOTER ======= -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="./assets/logo.svg" alt="4Jacks" class="footer-logo">
-                    <p>Delicious Draft Nitro Cold Brew For Your Restaurant, Cafe, or Business.</p>
-                    <p class="footer-tag">#BoldColdSmooth</p>
-                </div>
-                <div class="footer-col">
-                    <h4>explore</h4>
-                    <a href="./shop.html">shop</a>
-                    <a href="./about.html">our story</a>
-                    <a href="./drinks.html">mixology</a>
-                    <a href="./find-us.html">find 4jacks</a>
-                    <a href="./investor.html">investors</a>
-                    <a href="./community.html">community</a>
-                </div>
-                <div class="footer-col">
-                    <h4>support</h4>
-                    <a href="./faq.html">faq</a>
-                    <a href="./contact.html">contact us</a>
-                    <span style="margin-top:12px;display:block;"><strong>Distributed by</strong></span>
-                    <span>Sysco &bull; PFG &bull; US Foods</span>
-                </div>
+                <div class="footer-brand"><img src="./assets/logo.svg" alt="4Jacks" class="footer-logo"><p>Delicious Draft Nitro Cold Brew For Your Restaurant, Cafe, or Business.</p><p class="footer-tag">#BoldColdSmooth</p></div>
+                <div class="footer-col"><h4>explore</h4><a href="./shop.html">shop</a><a href="./about.html">our story</a><a href="./drinks.html">mixology</a><a href="./find-us.html">find 4jacks</a><a href="./investor.html">investors</a><a href="./community.html">community</a></div>
+                <div class="footer-col"><h4>support</h4><a href="./faq.html">faq</a><a href="./contact.html">contact us</a><span style="margin-top:12px;display:block;"><strong>Distributed by</strong></span><span>Sysco &bull; PFG &bull; US Foods</span></div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 4Jacks Nitro Cold Brew. All rights reserved. | <a href="./privacy.html">Privacy Policy</a> | <a href="./terms.html">Terms of Service</a></p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2025 4Jacks Nitro Cold Brew. All rights reserved. | <a href="./privacy.html">Privacy Policy</a> | <a href="./terms.html">Terms of Service</a></p></div>
     </footer>
-
     <script src="./script.js"></script>
 </body>
 </html>
